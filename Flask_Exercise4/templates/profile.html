@@ -1,4 +1,7 @@
 <!DOCTYPE html>
 
 <title>Welcome to my web page</title>
+
+<!-- The 'url_for()' function will help finding the css file even when we move it around -->
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <h1>Hi {{ name }}! How are you today?</h1>
