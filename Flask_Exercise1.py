@@ -9,7 +9,7 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/')     # Whatever name we place after the slash '/' will be a web page we want to do something with
+@app.route('/')     # 'route()' will bind a function to a URL
 def hello():        # By convention, name this func the same name as your web page
     return "Welcome to my home page"
 
